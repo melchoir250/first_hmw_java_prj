@@ -60,53 +60,26 @@ public class MathOperations {
         return (f - 32) * 5 / 9;
     }
 
+    public static void printResult(String description, Object result) {
+        System.out.println(description + result);
+    }
+
     public static void main(String[] args) {
-        int addOperation = add(5, 7);
-        System.out.println("Сумма чисел: " + addOperation);
-
-        int subtractOperation = subtract(10, 3);
-        System.out.println("Разница чисел: " + subtractOperation);
-
-        int multiplyOperation = multiply(5, 4);
-        System.out.println("Произведение чисел: " + multiplyOperation);
-
-        double divideOperation = divide(10, 3);
-        System.out.println("Деление чисел: " + divideOperation);
-
-        int findMaxOperation = findMax(33, 44);
-        System.out.println("Выводим наибольшее целочисленное число: " + findMaxOperation);
-
-        int differenceOperation = difference(55, 33);
-        System.out.println("Вывод разницы между двумя числами: " + differenceOperation);
-
-        int squareAreaOperation = squareArea(4);
-        System.out.println("Возвращаем площадь квадрата: " + squareAreaOperation);
-
-        int squarePerimeterOperation = squarePerimeter(5);
-        System.out.println("Возвращаем периметр квадрата: " + squarePerimeterOperation);
-
-        double convertSecondsToMinutesOperation = convertSecondsToMinutes(456);
-        System.out.println("Возвращаем значение перевода секунд в минуты: " + convertSecondsToMinutesOperation);
-
-        double averageSpeedOperation = averageSpeed(600, 60);
-        System.out.println("Возвращаем среднюю скорость: " + averageSpeedOperation);
-
-        double findHypotenuseOperation1 = findHypotenuse(12, 2);
-        System.out.println("Возвращаем гипотенузу 1: " + findHypotenuseOperation1);
-
-        double findHypotenuseOperation2 = findHypotenuse(14, 3);
-        System.out.println("Возвращаем гипотенузу 2: " + findHypotenuseOperation2);
-
-        double circleCircumferenceOperation = circleCircumference(22);
-        System.out.println("Возвращаем длину окружности: " + circleCircumferenceOperation);
-
-        double calculatePercentageOperation = calculatePercentage(22, 5);
-        System.out.println("Возвращаем проценты: " + calculatePercentageOperation);
-
-        double celsiusToFahrenheitOperation = celsiusToFahrenheit(500);
-        System.out.println("Возвращаем Фаренгейты: " + celsiusToFahrenheitOperation);
-
-        double fahrenheitToCelsiusOperation = fahrenheitToCelsius(300);
-        System.out.println("Возвращаем Цельсии: " + fahrenheitToCelsiusOperation);
+        printResult("Сумма чисел: ", add(5, 7));
+        printResult("Разница чисел: ", subtract(10, 3));
+        printResult("Произведение чисел: ", multiply(5, 4));
+        printResult("Деление чисел: ", divide(10, 3));
+        printResult("Выводим наибольшее целочисленное число: " , findMax(33, 44));
+        printResult("Вывод разницы между двумя числами: ", difference(55, 33));
+        printResult("Возвращаем площадь квадрата: ", squareArea(4));
+        printResult("Возвращаем периметр квадрата: ", squarePerimeter(5));
+        printResult("Возвращаем значение перевода секунд в минуты: ", convertSecondsToMinutes(456));
+        printResult("Возвращаем среднюю скорость: ", averageSpeed(600, 60));
+        printResult("Возвращаем гипотенузу 1: ", findHypotenuse(12, 2));
+        printResult("Возвращаем гипотенузу 2: ", findHypotenuse(14, 3));
+        printResult("Возвращаем длину окружности: ", circleCircumference(22));
+        printResult("Возвращаем проценты: ", calculatePercentage(22, 5));
+        printResult("Возвращаем Фаренгейты: ", celsiusToFahrenheit(500));
+        printResult("Возвращаем Цельсии: ", fahrenheitToCelsius(300));
     }
 }
