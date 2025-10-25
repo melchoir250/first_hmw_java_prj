@@ -1,6 +1,6 @@
 public class MathOperations {
 
-    public static int add(int x, int y) {
+    public static int add(int x,  int y) {
         return x + y;
     }
 
@@ -41,7 +41,7 @@ public class MathOperations {
     }
 
     public static double findHypotenuse(double a, double b) {
-        return (a * a + b * b) / 2;
+        return (a * a + b * b);
     }
 
     public static double circleCircumference(double radius) {
@@ -64,8 +64,8 @@ public class MathOperations {
         int addOperation = add(5, 7);
         System.out.println("Сумма чисел: " + addOperation);
 
-        int subtrackOperation = subtract(10, 3);
-        System.out.println("Разница чисел: " + subtrackOperation);
+        int subtractOperation = subtract(10, 3);
+        System.out.println("Разница чисел: " + subtractOperation);
 
         int multiplyOperation = multiply(5, 4);
         System.out.println("Произведение чисел: " + multiplyOperation);
